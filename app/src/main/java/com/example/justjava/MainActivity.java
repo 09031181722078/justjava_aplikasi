@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
         priceMessage += "\n" + getString(R.string.order_summary_whipped_cream)+ addWhippedCream;
         priceMessage += "\n" + getString(R.string.order_summary_chocolate)+ addChocolate;
         priceMessage += "\n" + getString(R.string.order_summary_quantity) +quantity;
-        priceMessage += "\n" + getString(R.string.order_summary_price) + "Rp." + price;
+        priceMessage += "\n" + getString(R.string.order_summary_price) + NumberFormat.getCurrencyInstance().format(price);
         priceMessage += "\n" + getString(R.string.thankyou);
         return priceMessage;
     }
